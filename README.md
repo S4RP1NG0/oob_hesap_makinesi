@@ -1,1 +1,2 @@
-# oob_hesap_makinesi
+# OOB Hesap Makinesi
+# S4RP1NG0
