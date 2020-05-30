@@ -28,25 +28,18 @@ Yapılacak İşlemler :
 Programdan çıkmak için "x" e Basınız.""")
 
 işlem = input("Lütfen Yapmak İstediğiniz İşlemi Seçiniz :")
-
+if (işlem == "x"):
+    print("Programdan Çıkılıyor...")
+    exit()
 sayi1 = int(input("Birinci Sayı: "))
 sayi2 = int(input("İkinci Sayı: "))
 sonuc = HesapMakinesi(sayi1,sayi2)
 
 if (işlem == "1"):
-    toplam = sayi1+sayi2
-    print("{}+{}= {}".format(sayi1,sayi2,toplam))
-
+    sonuc.toplama()   
 elif (işlem == "2"):
-    cikan = sayi1-sayi2
-    print("{}-{}= {}".format(sayi1,sayi2,cikan))
+    sonuc.cikarma()
 elif (işlem == "3"):
-    carpan = sayi1*sayi2
-    print("{}*{}= {}".format(sayi1,sayi2,carpan))
+    sonuc.carpma() 
 elif (işlem == "4"):
-    bolen = sayi1/sayi2
-    print("{}/{}= {}".format(sayi1,sayi2,bolen))
-elif (işlem == "x"):
-    print("Programdan Çıkılıyor...")
-else:
-    print("Hatalı Seçim Yaptınız. Lütfen Tekrar Deneyin.")
+    sonuc.bolme()
